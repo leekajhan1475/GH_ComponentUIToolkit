@@ -1,4 +1,4 @@
-﻿using Grasshopper.Kernel;
+using Grasshopper.Kernel;
 using System;
 using System.Drawing;
 
@@ -8,50 +8,47 @@ namespace GH_ComponentUIToolkit
     {
         public override string Name
         {
-            get
-            {
-                return "GH_ComponentUIToolkit";
-            }
-        }
-        public override Bitmap Icon
-        {
-            get
-            {
-                //Return a 24x24 pixel bitmap to represent this GHA library.
-                return null;
-            }
-        }
-        public override string Description
-        {
-            get
-            {
-                //Return a short string describing the purpose of this GHA library.
-                return "";
-            }
-        }
-        public override Guid Id
-        {
-            get
-            {
-                return new Guid("42cc943a-0923-4e07-803d-7ac0fb9bec8f");
-            }
+            get => "GH_ComponentUIToolkit";
         }
 
+        /// <summary>
+        /// 24x24 pixel bitmap to represent this .gha library.
+        /// </summary>
+        public override Bitmap Icon
+        {
+            get => null;
+        }
+
+        /// <summary>
+        /// Gets a short string describing the purpose of this .gha library.
+        /// </summary>
+        public override string Description
+        {
+            get => "Custom Grasshopper components";
+        }
+
+        /// <summary>
+        /// Gets a GUID representing this .gha library.
+        /// </summary>
+        public override Guid Id
+        {
+            get => new Guid("42cc943a-0923-4e07-803d-7ac0fb9bec8f");
+        }
+
+        /// <summary>
+        /// Gets the name of this assembly's author
+        /// </summary>
         public override string AuthorName
         {
-            get
-            {
-                //Return a string identifying you or your company.
-                return "";
-            }
+            get => "Zong-Han Chan";
         }
+
+        /// <summary>
+        /// Gets the contact info of this assembly's author
+        /// </summary>
         public override string AuthorContact
         {
-            get
-            {
-                //Return a string representing your preferred contact details.
-                return "";
-            }
+            get => "zonghan.chan@burohappold.com";
         }
     }
 }
