@@ -48,7 +48,7 @@ namespace GH_ComponentUIToolkit
         /// </summary>
         public override string AuthorContact
         {
-            get => "zonghan.chan@burohappold.com";
+            get => "leekajhan1475@gmail.com";
         }
     }
 }
